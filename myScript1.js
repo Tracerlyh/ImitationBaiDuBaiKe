@@ -1,5 +1,9 @@
 function topSpanClick(num)//点击事件，网页跳转
 {
+    if(num==12||num==13)
+    {
+        return 0;
+    }
     var spanurl=["https://www.baidu.com/s?ie=utf-8&fr=bks0000&wd=%E6%88%B3%E7%88%B7",
                 "https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&rsv_dl=ns_pc&word=%E6%88%B3%E7%88%B7",
                 "https://tieba.baidu.com/f?ie=utf-8&fr=bks0000&kw=%E6%88%B3%E7%88%B7",
@@ -26,4 +30,9 @@ function topSpanMouseout(num)//鼠标移出取消下划线
     var spanid="content"+num;//获得id
     var a=document.getElementById(spanid);//根据id找到元素
     a.style.textDecoration="none";
+}
+function bgcchange(num,c)
+{
+     var a=document.getElementById(num);
+     a.style.backgroundColor=c;
 }
