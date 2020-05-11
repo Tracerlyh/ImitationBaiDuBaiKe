@@ -1,4 +1,6 @@
-
+body, html {
+    overflow-x: hidden;
+} 
 #topColumn{
     width: 100%;
     height: 20px;
@@ -83,22 +85,143 @@
 }
 .miaodongbaike{
     width: 100%;
-    height: 300px;
+    height: 320px;
     position: relative;
     text-align: center;
     background-color: rgb(10,49,138);
 }
 #menutable{
     width: 100%;
-    height: 220px;
+    height: 240px;
+    text-align:left;
     background-color: rgba(35,95,157,0.7);
+    padding-left: 195px;
+    visibility: hidden;
     position: absolute;
     top: 0px;
 }
 .div5{
-    color: rgb(162,201,240);
-    border-left: 1px solid rgb(58,111,162);
-    height: 220px;
+    text-align: center;
+    border-left: 1px solid rgba(58,111,162,0.7);
+    height: 240px;
     display: inline-block;
     vertical-align: text-top;
+}
+.div5 span{
+    opacity:"1.0";
+    filter:"alpha(opacity=100%)";
+    color: rgb(162,201,240);
+    position: relative;
+}
+#Content{
+    height: 300px;
+    width: 200px;
+    background-color: aqua;
+}
+#videodiv{
+    display: inline-block;
+     padding-top: 30px;
+     height: 320px;
+     margin-left: 30px;
+}
+#videodiv1{
+    text-align: initial;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 30px;
+    width: 240px;
+    height: 230px;
+    background-color: 	#06122F;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.sv1{
+    color:rgb(222,222,222);
+    font-size: 12px;
+}
+.vd1{
+    height: 60px;
+    padding-top: 10px;
+}
+.vd2{
+    line-height: 25px;
+    vertical-align: top;
+    display: inline-block;
+    color: rgb(222,222,222);
+    font-size: 13px;
+}
+#img2{
+    height: 230px;
+    vertical-align: top;
+    display: inline-block;
+}
+.smallimg{
+    display: inline-block;
+    vertical-align:text-top;
+    padding-left: 70px;
+}
+#Content0{
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+}
+#Content0-1{
+    padding-left: 30px;
+    padding-top: 30px;
+    position: relative;
+    width: 72%;
+    height: 500px;
+    margin-left: 14%;
+    background-color: #fff;
+}
+#Content0-1-1{
+    width: 70%;
+float: left;
+}
+#Content0-1-2{
+    position: relative;
+    top:-90px;
+    display: inline-block;
+    width: 30%;
+}
+#Content0-2{
+    padding-left: 30px;
+    padding-top: 30px;
+    position: relative;
+    width: 72%;
+    height: 370px;
+    margin-left: 14%;
+    background-color: #fff;
+}
+#zhuyaozuoping{
+    position:absolute;
+    bottom: 10px;
+    width: 400px;
+    height: 200px;
+}
+.weblabel{
+    text-align: center;
+    background-color: #fff;
+    width: 110px;
+    height: 40px;
+}
+.row{
+    width: 80%;
+    height: 30px;
+    font-size: 14px;
+    border-bottom: 1px dashed #ccc;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+.font1{
+    float: left;
+    height: 30px;
+    color:rgb(153,153,179);
+    font-weight: bold;
+}
+#ceb1{
+    width: 20%;
+    position: absolute;
+    right: 0px;
+    top:0px;
 }

@@ -5,7 +5,9 @@
         <script src="myScript1.js"></script><!--调用自己写的js文件-->
     </head>
     <body>
-        <div id="topColumn"><!-- 顶栏盒子 -->
+
+        <div id="topColumn">
+            <!-- 顶栏盒子 -->
             <div class="topdiv"><span id="content1" onclick="topSpanClick(1)">网页</span></div>
             <div class="topdiv"><span id="content2" onclick="topSpanClick(2)">新闻</span></div>
             <div class="topdiv"><span id="content3" onclick="topSpanClick(3)">贴吧</span></div>
@@ -24,7 +26,8 @@
 
         </div>
 
-        <div class="SearchBar"><!-- 百度搜索栏-->
+        <div class="SearchBar">
+            <!-- 百度搜索栏-->
             <div class="div2" >
                 <img src="Sources/img/baidubaikelogo.jpg" width="190" height="50px" >
             </div><div class="div2" style="padding-top: 40px;">
@@ -39,87 +42,488 @@
         <br>
         <br>
         <div class="menu">
-            <div class="div4" id="m1" style="margin-left: 195px; width: 110px;">
+            <!--选项栏-->
+            <div class="div4" id="m1" 
+            style="margin-left: 195px; width: 110px;" onmouseover="mmin('m1',1,1)" onmouseout="mmout('m1',1,1)">
                 <span>首页</span> 
-            </div><div class="div4" id="m2" style="width: 110px;">
+            </div><div class="div4" id="m2" 
+            style="width: 110px;" onmouseover="mmin('m2',2,1)" onmouseout="mmout('m2',2,1)">
                 <span>分类</span>
-            </div><div class="div4" id="m3" style="width: 130px;">
+            </div><div class="div4" id="m3" 
+            style="width: 130px;" onmouseover="mmin('m3',3,1)" onmouseout="mmout('m3',3,1)">
                 <span>秒懂百科</span>
-            </div><div class="div4" id="m4" style="width: 130px;">
+            </div><div class="div4" id="m4" 
+            style="width: 130px;" onmouseover="mmin('m4',4,1)" onmouseout="mmout('m4',4,1)">
                 <span>特色百科</span>
-            </div><div class="div4" id="m5" style="width: 110px;">
+            </div><div class="div4" id="m5" 
+            style="width: 110px;" onmouseover="mmin('m5',5,1)" onmouseout="mmout('m5',5,1)">
                 <span>用户</span>
-            </div><div class="div4" id="m6" style="width: 130px;">
+            </div><div class="div4" id="m6" 
+            style="width: 130px;" onmouseover="mmin('m6',6,1)" onmouseout="mmout('m6',6,1)">
                 <span>权威合作</span>
-            </div><div class="div4" style="margin-left: 260px; color: rgb(57,130,200);background-color: rgb(69,157,245);font-weight: lighter;">
+            </div><div class="div4" id="" 
+            style="margin-left: 260px; color: rgb(57,130,200);background-color: rgb(69,157,245);font-weight: lighter;">
                 <span>|</span>
             </div><div style="display: inline-block;margin-left: 30px;color: #fff;height: 49px;line-height: 49px;text-align: center;">
                 <img src="Sources/img/002.png" width="18",height="18">
                 <span>个人中心</span>
             </div>
             <div class="miaodongbaike" >
-                <img src="Sources/img/miaodong.png" style="padding-top: 120px;">
+                <!--秒懂百科-->
+                <div style="display: inline-block;height: 320px;line-height: 320px;vertical-align: top;margin-left: -100px;">
+                    <img src="Sources/img/miaodong.png" style="padding-top: 60px;" width="130px" height="50px">
+                </div>
+
+                <div id="videodiv" >
+                    <video id="video" src="Sources/video/特洛耶·希文_百度百科.mp4"
+                     controls="controls" 
+                    autoplay="autoplay"     
+                     width="427px" 
+                     height="240px" 
+                     poster="Sources/img/vidoPoster1.jpg">
+                    </video>
+                </div><div id="videodiv1">
+                    <!--秒懂百科视频盒子-->
+                    <span class="sv1">相关视频</span>
+                    <span style="color: rgb(153,153,153); font-size: 13px;">&nbsp;|&nbsp;</span>
+                    <span class="sv1" style="color: rgb(153,153,153);">推荐视频</span>
+                    <div style="display: inline-block;padding-left: 30px;">
+                    <img src="Sources/img/img1.png" width="70px" height="20px" style="vertical-align: text-top;">                        
+                    </div>
+                    <div class="vd1" style="background-color: rgb(22,52,95);">
+                        <!--视频播放列表-->
+                        <img src="Sources/img/vidoPoster1.jpg" width="70px" height="55px">
+                        <div class="vd2">
+                        一分钟了解特洛耶·...<br>
+                        <span style=" color: rgb(153,153,153);font-size: 11px;">158万播放</span>
+                            <div class="smallimg">
+                                <img src="Sources/img/img5.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vd1">
+                        <img src="Sources/img/img3.png" width="70px" height="55px">
+                        <div class="vd2">
+                        rainbow彩虹少年戳...<br>
+                        <span style=" color: rgb(153,153,153);font-size: 11px;">4.3万播放</span>
+                        <div class="smallimg" style="padding-left: 71px;">
+                            <img src="Sources/img/img7.png">
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="vd1">
+                        <img src="Sources/img/img4.jpg" width="70px" height="55px">
+                        <div class="vd2">
+                        特洛耶·希文:2岁...<br>
+                        <span style=" color: rgb(153,153,153);font-size: 11px;">10.5万播放</span>
+                        <div class="smallimg" style="padding-left: 67px;">
+                            <img src="Sources/img/img7.png">
+                        </div>
+                        </div>
+
+                </div>
+                    </div><div id="img2">
+                        <img src="Sources/img/img2.1.png">
+                    </div>
                 <div id="menutable">
-                    <div class="div5" style="width: 110px;margin-left: -400px;">
-                        <span>历史上的今天</span><br>
+                    <!--隐藏的选项栏(鼠标移入选项栏就弹出)-->
+                    <div class="div5" id="mu1" style="width: 109px;" onmouseover="mmin('m1',1,2)" onmouseout="mmout('m1',1,2)">
+                        <span id="span1" onmouseover="spanover(1)" onmouseout="spanout(1)">历史上的今天</span><br>
                         <br>
-                        <span>百科冷知识</span><br>
+                        <span id="span2" onmouseover="spanover(2)" onmouseout="spanout(2)">百科冷知识</span><br>
                         <br>
-                        <span>图解百科</span>
-                    </div><div class="div5" style="width: 110px;">
-                        <span>艺术</span>&nbsp;&nbsp;<span>科学</span><br><br>
-                        <span>自然</span>&nbsp;&nbsp;<span>文化</span><br><br>
-                        <span>社会</span>&nbsp;&nbsp;<span>生活</span><br><br>
-                        <span>艺术</span>&nbsp;&nbsp;<span>人物</span><br><br>
-                        <span>经济</span>&nbsp;&nbsp;<span>体育</span><br><br>
-                        <span>历史</span>
-                    </div><div class="div5" style="width: 130px;">
-                        <span>懂啦</span><br>
+                        <span id="span3" onmouseover="spanover(3)" onmouseout="spanout(3)">图解百科</span>
+                    </div><div class="div5" id="mu2"  style="width: 109px;" onmouseover="mmin('m2',2,2)" onmouseout="mmout('m2',2,2)">
+                        <span id="span4" onmouseover="spanover(4)" onmouseout="spanout(4)">艺术</span>&nbsp;&nbsp;
+                        <span id="span5" onmouseover="spanover(5)" onmouseout="spanout(5)">科学</span><br><br>
+                        <span id="span6" onmouseover="spanover(6)" onmouseout="spanout(6)">自然</span>&nbsp;&nbsp;
+                        <span id="span7" onmouseover="spanover(7)" onmouseout="spanout(7)">文化</span><br><br>
+                        <span id="span8" onmouseover="spanover(8)" onmouseout="spanout(8)">社会</span>&nbsp;&nbsp;
+                        <span id="span9" onmouseover="spanover(9)" onmouseout="spanout(9)">生活</span><br><br>
+                        <span id="span10" onmouseover="spanover(10)" onmouseout="spanout(10)">艺术</span>&nbsp;&nbsp;
+                        <span id="span11" onmouseover="spanover(11)" onmouseout="spanout(11)">人物</span><br><br>
+                        <span id="span12" onmouseover="spanover(12)" onmouseout="spanout(12)">经济</span>&nbsp;&nbsp;
+                        <span id="span13" onmouseover="spanover(13)" onmouseout="spanout(13)">体育</span><br><br>
+                        <span id="span14" onmouseover="spanover(14)" onmouseout="spanout(14)">历史</span>
+                    </div><div class="div5" id="mu3"  style="width: 129px;" onmouseover="mmin('m3',3,2)" onmouseout="mmout('m3',3,2)">
+                        <span id="span15" onmouseover="spanover(15)" onmouseout="spanout(15)">懂啦</span><br>
                         <br>
-                        <span>秒懂本尊答</span><br>
+                        <span id="span16" onmouseover="spanover(16)" onmouseout="spanout(16)">秒懂本尊答</span><br>
                         <br>
-                        <span>秒懂大师说</span><br>
+                        <span id="span17" onmouseover="spanover(17)" onmouseout="spanout(17)">秒懂大师说</span><br>
                         <br>
-                        <span>秒懂看瓦特</span><br>
+                        <span id="span18" onmouseover="spanover(18)" onmouseout="spanout(18)">秒懂看瓦特</span><br>
                         <br>
-                        <span>秒懂五千年</span><br>
+                        <span id="span19" onmouseover="spanover(19)" onmouseout="spanout(19)">秒懂五千年</span><br>
                         <br>
-                        <span>秒懂全视界</span><br>
+                        <span id="span20" onmouseover="spanover(20)" onmouseout="spanout(20)">秒懂全视界</span><br>
                         <br>
-                    </div><div class="div5" style="width: 130px;">
-                        <span>数字博物馆</span><br>
+                    </div><div class="div5"  id="mu4" style="width: 129px;" onmouseover="mmin('m4',4,2)" onmouseout="mmout('m4',4,2)">
+                        <span id="span21" onmouseover="spanover(21)" onmouseout="spanout(21)">数字博物馆</span><br>
                         <br>
-                        <span>非遗百科</span><br>
+                        <span id="span22" onmouseover="spanover(22)" onmouseout="spanout(22)">非遗百科</span><br>
                         <br>
-                        <span>城市百科</span><br>
+                        <span id="span23" onmouseover="spanover(23)" onmouseout="spanout(23)">城市百科</span><br>
                         <br>
-                        <span>恐龙百科</span><br>
+                        <span id="span24" onmouseover="spanover(24)" onmouseout="spanout(24)">恐龙百科</span><br>
                         <br>
-                        <span>多肉百科</span><br>
+                        <span id="span25" onmouseover="spanover(25)" onmouseout="spanout(25)">多肉百科</span><br>
                         <br>
-                    </div><div class="div5" style="width: 110px;">
-                        <span>蝌蚪团</span><br>
+                    </div><div class="div5" id="mu5"  style="width: 109px;" onmouseover="mmin('m5',5,2)" onmouseout="mmout('m5',5,2)">
+                        <span id="span26" onmouseover="spanover(26)" onmouseout="spanout(26)">蝌蚪团</span><br>
                         <br>
-                        <span>燃梦计划</span><br>
+                        <span id="span27" onmouseover="spanover(27)" onmouseout="spanout(27)">燃梦计划</span><br>
                         <br>
-                        <span>分类达人</span><br>
+                        <span id="span28" onmouseover="spanover(28)" onmouseout="spanout(28)">分类达人</span><br>
                         <br>
-                        <span>百科任务</span><br>
+                        <span id="span29" onmouseover="spanover(29)" onmouseout="spanout(29)">百科任务</span><br>
                         <br>
-                        <span>百科商城</span><br>
+                        <span id="span30" onmouseover="spanover(30)" onmouseout="spanout(30)">百科商城</span><br>
                         <br>
-                    </div><div class="div5" style="width: 130px;">
-                        <span>合作模式</span><br>
+                    </div><div class="div5" id="mu6"  style="width: 130px;" onmouseover="mmin('m6',6,2)" onmouseout="mmout('m6',6,2)">
+                        <span id="span31" onmouseover="spanover(31)" onmouseout="spanout(31)">合作模式</span><br>
                         <br>
-                        <span>常见问题</span><br>
+                        <span id="span32" onmouseover="spanover(32)" onmouseout="spanout(32)">常见问题</span><br>
                         <br>
-                        <span>联系方式</span><br>
+                        <span id="span33" onmouseover="spanover(33)" onmouseout="spanout(33)">联系方式</span><br>
                         <br>
                     </div>
                 </div>
             </div>
-            <div id="Content">
-            </div>
+
         </div>
+            <div id="Content0">
+                <div id="Content0-1">
+                    <span style="font-size: 40px;">特洛耶·希文</span><br><br>
+                    <div id="Content0-1-1">
+                        特洛耶·希文（Troye Sivan），1995年6月5日出生于南非约翰内斯堡，
+                        南非裔澳大利亚歌手、演员。<br><br>
+                        2007年，在YouTube平台翻唱歌曲《Tell Me Why》，获得大众的关注 [1]  。
+                        2008年，在电影《X战警前传：金刚狼》中出演少年时期的“金刚狼”詹姆斯·豪利特。
+                        2011年，凭借电影《马铃薯》提名南非电影电视奖电影长片类最佳男主角奖 [2]  。
+                        2013年，发行个人首张音乐EP《TRXYE》。
+                        2014年，入选《时代周刊》“2014年网络最具有影响力青少年25位” [3]  。
+                        2015年，获得儿童选择奖“最受欢迎澳大利亚/新西兰网络红人奖” [4]  ，并发行个人第二张音乐EP《WILD》，
+                        12月发行个人首张音乐专辑《Blue Neighbourhood》 [5]  。2018年，
+                        发行个人第二张音乐专辑《Bloom》 [6]  。
+                    </div><div id="Content0-1-2">
+                        <img src="Sources/img/img8.jpg" width="270px" height="365px" style="padding-left: 30px;">
+                    </div>
+                    
+                    <div id="zhuyaozuoping">
+                        <span style="font-size: 25px;">代表<span style="color: rgb(81,156,235);">作品</span></span><br><br>
+                        <img src="Sources/img/zuoping1.jpg">
+                        &nbsp;
+                        <img src="Sources/img/zuoping2.jpg">
+                        &nbsp;
+                        <img src="Sources/img/zuoping3.jpg">
+                        &nbsp;
+                        <img src="Sources/img/zuoping4.jpg">
+                        <br><br>
+                    </div>
+                    <div style="width:48px;height: 89px;position: absolute;top: 30px;left: -48px;">
+                        <img src="Sources/img/tesecitiao.png" alt="">
+                    </div>
+                </div>
+                <br>
+                <div id="Content0-2">
+                    <a name="aa1"></a>
+                    <div  style="position: relative;">
+                        <img src="Sources/img/biaoshi01.png">&nbsp;&nbsp;<span style="font-size: 30px;">基本信息</span>
+                    </div><br>
+                    <div id="baseinf" style="width: 100%;position: relative;height:500px;">
+                        <div class="row">
+                            <div class="font1" style="margin-left: 50px; width: 50px;">中文名</div>
+                            <div class="font1" style="width: 220px;margin-left: 80px; font-weight: unset;color: #000;">特洛耶·希文</div>
+                            <div class="font1" style="margin-left: 10px;width: 100px;">出生地</div>
+                            <div class="font1" style=" font-weight: unset;color: #000;">南非约翰内斯堡</div>
+                        </div>
+                        <div class="row">
+                            <div class="font1" style="margin-left: 50px;width: 50px;">外文名</div>
+                            <div class="font1" style=" width: 220px;margin-left: 80px; font-weight: unset;color: #000;">Troye Sivan</div>
+                            <div class="font1" style="margin-left: 10px;width: 100px;">出生日期</div>
+                            <div class="font1" style=" font-weight: unset;color: #000;">1995年6月5日</div>
+                        </div>
+                        <div class="row">
+                            <div class="font1" style="margin-left: 50px;width: 50px;">别名</div>
+                            <div class="font1" style=" width: 220px;margin-left: 80px; font-weight: unset;color: #000;">戳爷、小T、Troye Sivan Mellet</div>
+                            <div class="font1" style="margin-left: 10px;width: 100px;">职业</div>
+                            <div class="font1" style=" font-weight: unset;color: #000;">歌手、演员</div>
+                        </div>
+                        <div class="row">
+                            <div class="font1" style="margin-left: 50px;width: 50px;">国    籍</div>
+                            <div class="font1" style=" width: 220px;margin-left: 80px; font-weight: unset;color: #000;">澳大利亚</div>
+                            <div class="font1" style="margin-left: 10px;width: 100px;">毕业院校</div>
+                            <div class="font1" style=" font-weight: unset;color: #000;">Carmel School</div>
+                        </div>
+                        <div class="row">
+                            <div class="font1" style="margin-left: 50px;width: 50px;">民    族</div>
+                            <div class="font1" style=" width: 220px;margin-left: 80px; font-weight: unset;color: #000;">犹太族</div>
+                            <div class="font1" style="margin-left: 10px;width: 100px;">经纪公司</div>
+                            <div class="font1" style=" font-weight: unset;color: #000;">百代唱片</div>
+                        </div>
+                        <div class="row">
+                            <div class="font1" style="margin-left: 50px;width: 50px;">星    座</div>
+                            <div class="font1" style=" width: 220px;margin-left: 80px; font-weight: unset;color: #000;">双子座</div>
+                            <div class="font1" style="margin-left: 10px;width: 100px;">代表作品</div>
+                            <div class="font1" style=" font-weight: unset;color: #000;">Youth、WILD、BLUE、Talk Me Down、Happy Little</div>
+                        </div>
+                        <div class="row">
+                            <div class="font1" style="margin-left: 50px;width: 50px;">血型</div>
+                            <div class="font1" style=" width: 220px;margin-left: 80px; font-weight: unset;color: #000;">O型</div>
+                            <div class="font1" style="margin-left: 10px;width: 100px;"></div>
+                            <div class="font1" style=" font-weight: unset;color: #000;">Pill</div>
+                        </div>                        
+                        <div class="row">
+                            <div class="font1" style="margin-left: 50px;width: 50px;">身高</div>
+                            <div class="font1" style=" width: 220px;margin-left: 80px; font-weight: unset;color: #000;">174cm</div>
+                            <div class="font1" style="margin-left: 10px;width: 100px;">主要成就</div>
+                            <div class="font1" style=" font-weight: unset;color: #000;">《时代》周刊2014年网络最具有影响力青少年</div>
+                        </div>
+                        <div class="row">
+                            <div class="font1" style="margin-left: 50px;width: 50px;">体重</div>
+                            <div class="font1" style=" width: 220px;margin-left: 80px; font-weight: unset;color: #000;">50kg</div>
+                            <div class="font1" style="margin-left: 10px;width: 100px;"></div>
+                            <div class="font1" style=" font-weight: unset;color: #000;">儿童选择奖最受欢迎澳大利亚/新西兰网络红人</div>
+                        </div>
+                        <div class="row">
+                            <div class="font1" style="margin-left: 50px;width: 50px;"></div>
+                            <div class="font1" style=" width: 220px;margin-left: 80px; font-weight: unset;color: #000;"></div>
+                            <div class="font1" style="margin-left: 10px;width: 100px;"></div>
+                            <div class="font1" style=" font-weight: unset;color: #000;">欧洲音乐大奖最佳澳大利亚艺人</div>
+                        </div>
+                        <div id="ceb1">
+                            <img src="Sources/img/cebian1.png" width="100%">
+                        </div>
+                    </div>
+                    <a name="aa2"></a>
+                    <div>
+                        <img src="Sources/img/biaoshi01.png">&nbsp;&nbsp;<span style="font-size: 30px;">早年经历</span>
+                    </div>
+                    <div id="zaonianjingli" style="width: 100%;position: relative;height:1010px;">
+                        <div style="width: 80%;padding-left: 20px;padding-top: 20px;">
+                             <img src="Sources/img/gif1.gif">
+                        </div>
+                        <div style="width: 70%;padding-left: 20px;padding-top: 20px;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;特洛耶·希文出生于南非约翰内斯堡。在他两岁时，
+                            全家移居至澳大利亚西部珀斯。特洛耶·希文的爸爸是房地产经纪人，出生于一个犹太家庭 [7]  。
+                            妈妈是全职家庭主妇，皈依犹太教 [8]  。特洛耶·希文是作为传统的犹太人长大，
+                            曾就读于一所犹太学校 [8]  。特洛耶·希文有庆祝犹太安息日 [9]  。
+                            2007年，特洛耶·希文开启YouTube自媒体频道，并上传了翻唱《Tell Me Why》的视频，获得大众的关注，
+                            一个月时间获得了2.7万订阅数 [10]  。
+                       </div>
+                       <div style="width: 70%;padding-left: 20px;padding-top: 20px;">
+                           <img src="Sources/img/img9.jpg">&nbsp;
+                           <img src="Sources/img/img10.jpg">
+                        </div>
+                        <div style="width: 20%;position: absolute;right: 0px;bottom:0px;">
+                            <img src="Sources/img/cebian3.png" width="100%">
+                        </div>
+                       <div id="ceb1">
+                           <img src="Sources/img/cebian2.png" width="100%">
+                       </div>
+                    </div>
+
+                    <a name="aa3"></a>
+                    <div>
+                        <img src="Sources/img/biaoshi01.png">&nbsp;&nbsp;<span style="font-size: 30px;">演艺经历</span>
+                    </div>
+                    <div id="zaonianjingli" style="width: 100%;position: relative;height:700px;">
+                        <div style="width: 80%;padding-left: 20px;padding-top: 20px;">
+                             <img src="Sources/img/img11.jpg">
+                        </div>
+                        <div style="width: 70%;padding-left: 20px;padding-top: 20px;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;2007年，特洛耶·希文在里格尔剧院（Regal Theatre）上演的舞台剧《雾都孤儿》里扮演主角Oliver Twist，同年，他参加了澳大利亚的真人秀节目《Star Search》。2008年，参与电影《X战警前传：金刚狼》的拍摄，出演少年时期的詹姆斯·豪利特 [11]  。2009年，发行单曲《For Them》，该曲是一首为世界苦难儿童所唱的歌。同年，翻唱歌曲《an angel》。2010年2月，参与《We Are The World 25 for Haiti》的录制，为海地地震遇难者筹集善款。3月，在南非参与电影《马铃薯》（Spud）的拍摄，在该片中出演男主角 [12]  。
+                            <br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;2011年，凭借电影《马铃薯》提名南非电影电视奖“电影长片类最佳男主角奖” [2]  。2012年3月9日，特洛耶·希文参与录制的《天天向上》播出，特洛耶·希文在节目中翻唱了《The One That Got Away》 [13]  。2013年6月5日，签约澳大利亚百代唱片。2014年8月15日，发行个人首张音乐EP《TRXYE》。该EP上架首周，在全球范围内获得55国下载榜冠军；EP单曲《Happy Little Pill》被澳洲认证黄金销量。同年10月，入选《时代》周刊“2014年网络最具有影响力青少年25位”。 [3]
+                            <br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            2015年9月4日，发行个人第二张音乐EP《WILD》。10月15日，北美巡演于西雅图启程。12月4日，发行个人首张音乐专辑《Blue Neighbourhood》 [14]  。2016年4月，登上同性杂志《Out》封面。5月，亮相美国公告牌颁奖典礼，并在现场演唱《Youth》 [15]  。2017年5月26日，发行音乐单曲《There For You》 [16]  。8月31日，加盟澳洲男星乔尔·埃哲顿执导的同性题材影片《被抹去的男孩》 [17]  。2018年8月，发行个人第二张音乐专辑《BLOOM》 [6]  。
+                            <br><br>
+                       </div>
+                    </div>                    
+                    <a name="aa4"></a>
+                    <div>
+                        <img src="Sources/img/biaoshi01.png">&nbsp;&nbsp;<span style="font-size: 30px;">个人生活</span>
+                    </div>
+                    <div id="zaonianjingli" style="width: 100%;position: relative;height:500px;">
+                        <div style="width: 80%;padding-left: 20px;padding-top: 20px;">
+                             <img src="Sources/img/img12.jpg">
+                        </div>
+                        <div style="width: 70%;padding-left: 20px;padding-top: 20px;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;2013年8月7日，特洛耶·希文在YouTube发布视频，公开自己的性取向 [1]  。同时，他得到了父母和亲戚的理解和支持 [3]  。他的同性男友是Jacob Bixenman [18]  。
+                       </div>
+                    </div>
+                    <a name="aa5"></a>
+                    <div>
+                        <img src="Sources/img/biaoshi01.png">&nbsp;&nbsp;<span style="font-size: 30px;">主要作品</span>
+                    </div>
+                    <div id="zaonianjingli" style="width: 100%;position: relative;height:500px;">
+                        <br><span style="font-size: 20px;">参演电影<span><br>
+                        <div style="width: 80%;padding-top: 20px;">
+                            <div>
+                                <div style="display:inline-block;">
+                                    <img src="Sources/img/mv1.jpg" width="66px" height="89px">
+                                </div>
+                                <div style="height: 89px;display:inline-block;font-size: 12px;padding-left: 10px;">
+                                    <span style="font-size: 14px;color: rgb(19,108,190);">被抹去的男孩</span>&nbsp;<span>2018</span><br><br>
+                                    <span>饰演</span>&nbsp;<span>Gary</span><br>
+                                    <span>导演</span>&nbsp;<span>乔尔·埃哲顿</span><br>
+                                    <span>主演</span>&nbsp;<span>卢卡斯·赫奇斯</span>
+                                </div>
+                                <div style="display:inline-block;padding-left: 100px;">
+                                    <img src="Sources/img/mv2.jpg" width="66px" height="89px">
+                                </div>
+                                <div style="height: 89px;display:inline-block;font-size: 12px;padding-left: 10px;">
+                                    <span style="font-size: 14px;color: rgb(19,108,190);">马铃薯3</span>&nbsp;<span>2014</span><br><br>
+                                    <span>饰演</span>&nbsp;<span>John Milton</span><br>
+                                    <span>导演</span>&nbsp;<span>Donovan Marsh</span><br>
+                                    <span>主演</span>&nbsp;<span>John Cleese</span>
+                                </div>
+                            </div>
+                            <br>
+                            <div>
+                                <div style="display:inline-block;">
+                                    <img src="Sources/img/mv3.jpg" width="66px" height="89px">
+                                </div>
+                                <div style="height: 89px;display:inline-block;font-size: 12px;padding-left: 10px;">
+                                    <span style="font-size: 14px;color: rgb(19,108,190);">马铃薯2</span>&nbsp;<span>2013</span><br><br>
+                                    <span>饰演</span>&nbsp;<span>John Milton</span><br>
+                                    <span>导演</span>&nbsp;<span>Donovan Marsh</span><br>
+                                    <span>主演</span>&nbsp;<span>John Cleese</span>
+                                </div>
+                                <div style="display:inline-block;padding-left: 100px;">
+                                    <img src="Sources/img/mv4.jpg" width="66px" height="89px">
+                                </div>
+                                <div style="height: 89px;display:inline-block;font-size: 12px;padding-left: 10px;">
+                                    <span style="font-size: 14px;color: rgb(19,108,190);">马铃薯</span>&nbsp;<span>2010</span><br><br>
+                                    <span>饰演</span>&nbsp;<span>John Milton</span><br>
+                                    <span>导演</span>&nbsp;<span>Donovan Marsh</span><br>
+                                    <span>主演</span>&nbsp;<span>John Cleese</span>
+                                </div>
+                            </div>
+                            <br>
+                            <div>
+                                <div style="display:inline-block;">
+                                    <img src="Sources/img/mv5.jpg" width="66px" height="89px">
+                                </div>
+                                <div style="height: 89px;display:inline-block;font-size: 12px;padding-left: 10px;">
+                                    <span style="font-size: 14px;color: rgb(19,108,190);">金刚狼</span>&nbsp;<span>2009</span><br><br>
+                                    <span>饰演</span>&nbsp;<span>幼年金刚狼</span><br>
+                                    <span>导演</span>&nbsp;<span>加文·胡德</span><br>
+                                    <span>主演</span>&nbsp;<span>休·杰克曼</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a name="aa6"></a>
+                    <div>
+                        <img src="Sources/img/biaoshi01.png">&nbsp;&nbsp;<span style="font-size: 30px;">演唱会纪录</span>
+                    </div>
+                    <div id="zaonianjingli" style="width: 100%;position: relative;height:500px;">
+                        <div style="width: 80%;padding-left: 20px;padding-top: 20px;">
+                            <div style="line-height: 40px;height: 40px;width: 100%;border-top: 1px solid rgb(204,204,204);background-color: rgb(248,248,248);font-weight: bold;">
+                                音乐奖项</div>
+                        </div>
+                        <div style="width: 70%;padding-left: 20px;padding-top: 20px;">
+                        </div>
+                    </div>
+                    <a name="aa7"></a>
+                    <div>
+                        <img src="Sources/img/biaoshi01.png">&nbsp;&nbsp;<span style="font-size: 30px;">社会活动</span>
+                    </div>
+                    <div id="zaonianjingli" style="width: 100%;position: relative;height:300px;">
+                        <div style="width: 38%;padding-left: 20px;padding-top: 20px;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;2006年至2008年，特洛耶·希文连续三年参加了七号电视网珀斯电视募捐活动，并在活动中献唱，所募得资金捐献给珀斯当地的儿童医院、儿童健康研究院和听障中心等机构 [21]  。2013年5月5日，在YouTube频道上发布了原创歌曲《The Fault In Our Stars》，将发售的收入捐献给了珀斯的玛格丽特公主医院基金会作为癌症治疗和研究 [22]  。
+                            <br>
+                            <div style="position: absolute;top: 0px;right: 30%;">
+                                <img src="Sources/img/img13.jpg" width="265" height="172">
+                            </div>
+                       </div>
+                    </div>
+                    <a name="aa8"></a>
+                    <div>
+                        <img src="Sources/img/biaoshi01.png">&nbsp;&nbsp;<span style="font-size: 30px;">获奖记录</span>
+                    </div>
+                    <div id="zaonianjingli" style="width: 80%;position: relative;height:700px;">
+                        <div style="width: 80%;padding-left: 20px;padding-top: 20px;">
+                             <div style="line-height: 40px;height: 40px;text-align: center;width: 100%;border-top: 1px solid rgb(154,165,173);background-color: rgb(250,250,250);font-weight: bold;">
+                                音乐奖项</div>
+                            <div>
+                                <span style="line-height: 40px;height: 40px;">▪ &nbsp;2017-04    第5届音悦V榜年度盛典：欧美最佳新人奖    （获奖）    </span>
+                            </div>
+                            <div>
+                                <span style="line-height: 40px;height: 40px;">▪ &nbsp; 2016-12    2016澳大利亚唱片业协会音乐奖：年度歌曲奖《Youth》、最佳录影带《Youth》    （获奖）    </span>
+                            </div>
+                            <div>
+                                <span style="line-height: 40px;height: 40px;">▪ &nbsp;2016-11    2016欧洲音乐大奖：最佳澳大利亚艺人奖    （获奖） </span>
+                            </div>
+                            <div>
+                                <span style="line-height: 40px;height: 40px;">▪ &nbsp;2016-01    2016同志媒体奖：杰出音乐人奖《Blue Neighbourhood》    （获奖） </span>
+                            </div>
+                            <div>
+                                <span style="line-height: 40px;height: 40px;">▪ &nbsp;2015-10    2015欧洲音乐大奖：最佳新人奖    （获奖）    </span>
+                            </div> 
+                            <div>
+                                <span style="line-height: 40px;height: 40px;">▪ &nbsp;2015-03    2015 YouTube音乐奖：50大热门艺人奖    （获奖）</span>
+                            </div>
+                        </div><br>
+                        <div style="width: 80%;padding-left: 20px;padding-top: 20px;">
+                            <div style="line-height: 40px;height: 40px;text-align: center;width: 100%;border-top: 1px solid rgb(154,165,173);background-color: rgb(250,250,250);font-weight: bold;">
+                               影视奖项</div>
+                           <div>
+                               <span style="line-height: 40px;height: 40px;">▪ &nbsp;2014-07    2014青少年选择奖 ：网络最佳拍档奖《The 'Boyfriend' Tag》    （获奖） </span>
+                           </div>
+                           <div>
+                               <span style="line-height: 40px;height: 40px;">▪ &nbsp;2011    2011南非电影电视奖：电影长片类最佳男主角奖[2]     （提名） </span>
+                           </div>
+                       </div><br>
+                       <div style="width: 80%;padding-left: 20px;padding-top: 20px;">
+                           <div style="line-height: 40px;height: 40px;text-align: center;width: 100%;border-top: 1px solid rgb(154,165,173);background-color: rgb(250,250,250);font-weight: bold;">
+                              个人奖项</div>
+                          <div>
+                              <span style="line-height: 40px;height: 40px;">▪ &nbsp; 2017-04    2017同志媒体奖：Stephen F. Kolzak奖    （获奖）   </span>
+                          </div>
+                          <div>
+                              <span style="line-height: 40px;height: 40px;">▪ &nbsp;2015-03    2015儿童选择奖：最受欢迎澳大利亚/新西兰网络红人奖[4]     （获奖）    </span>
+                          </div>
+                      </div>
+                    </div>
+                    <a name="aa9"></a>
+                    <div>
+                        <img src="Sources/img/biaoshi01.png">&nbsp;&nbsp;<span style="font-size: 30px;">人物评价</span>
+                    </div>
+                    <div id="zaonianjingli" style="width: 100%;position: relative;height:500px;">
+                        <div style="width: 80%;padding-left: 20px;padding-top: 20px;">
+                             <img src="Sources/img/img12.jpg">
+                        </div>
+                        <div style="width: 70%;padding-left: 20px;padding-top: 20px;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;特洛耶·希文的歌唱，能够引起听众情绪上的共鸣，用情至深。（泰勒·斯威夫特评） [3]  特洛耶·希文虽然身体单薄，但是歌唱时镇定自若、发挥稳定。（搜狐网评） [23]
+                            <br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;特洛耶·希文通过YOUTUBE开设视频节目，讲各种青少年社会现象、模仿艺人做怪相，犀利又活泼，积攒了大批粉丝。（网易评） [24]  特洛耶·希文也参加了澳大利亚许多综艺节目，得到了越来越多人的关注。（腾讯网评） [1]
+                       </div>
+                       <div style="position: absolute;top: 0px;right: 30%;">
+                           <img src="Sources/img/xiezhen.png" width="172" height="265">
+                       </div>
+                    </div>
+                </div>
+            </div>
+                <!--目录描点链接以及右侧悬浮窗-->
+                <div style="width: 45px;height: 200px;background-color: red;position: fixed;right: 0px;top: 300px;">
+                    <img src="Sources/img/float2.png">
+                </div>
+                <div style="width: 90px;height: 400px;position: fixed;left: 5px;top: 300px;">
+                    <div class="weblabel" style="background-color: #6FB6FD;"><a>目录</a></div>
+                    <div id="da1" class="weblabel" onmouseover="addunderline(1)" onmouseout="delunderline(1)"><a id="a1" href="#aa1">1、基本信息</a></div>
+                    <div id="da2" class="weblabel" onmouseover="addunderline(2)" onmouseout="delunderline(2)"><a id="a2" href="#aa2">2、早年经历</a></div>
+                    <div id="da3" class="weblabel" onmouseover="addunderline(3)" onmouseout="delunderline(3)"><a id="a3" href="#aa3">3、演艺经历</a></div>
+                    <div id="da4" class="weblabel" onmouseover="addunderline(4)" onmouseout="delunderline(4)"><a id="a4" href="#aa4">4、个人生活</a></div>
+                    <div id="da5" class="weblabel" onmouseover="addunderline(5)" onmouseout="delunderline(5)"><a id="a5" href="#aa5">5、主要作品</a></div>
+                    <div id="da6" class="weblabel" onmouseover="addunderline(6)" onmouseout="delunderline(6)"><a id="a6" href="#aa6">6、演唱会记录</a></div>
+                    <div id="da7" class="weblabel" onmouseover="addunderline(7)" onmouseout="delunderline(7)"><a id="a7" href="#aa7">7、社会活动</a></div>
+                    <div id="da8" class="weblabel" onmouseover="addunderline(8)" onmouseout="delunderline(8)"><a id="a8" href="#aa8">8、获奖记录</a></div>
+                    <div id="da9" class="weblabel" onmouseover="addunderline(9)" onmouseout="delunderline(9)"><a id="a9" href="#aa9">9、人物评价</a></div>
+                </div>
     </body>
 </html>

@@ -31,8 +31,90 @@ function topSpanMouseout(num)//鼠标移出取消下划线
     var a=document.getElementById(spanid);//根据id找到元素
     a.style.textDecoration="none";
 }
-function bgcchange(num,c)
+function bgcchange(num,c)//改变指定id元素的背景颜色
 {
      var a=document.getElementById(num);
      a.style.backgroundColor=c;
+} 
+var flag1=0;//鼠标是否在菜单栏内
+var flag2=0;//鼠标是否在菜单详情内
+function mmin(a,b,f)//鼠标移入菜单栏背景颜色的改变和菜单详情的可见性
+{
+    if(f==1)
+    {
+        flag1=1;
+    }
+    if(f==2)
+    {
+        flag2=1;
+    }
+    if(flag1==1||flag2==1)
+    {
+        var t=document.getElementById("menutable");
+        t.style.visibility="unset";
+    }
+    var a=document.getElementById(a);
+    a.style.backgroundColor="#338CE6";
+    var muid="mu"+b;
+    var a1=document.getElementById(muid);
+    a1.style.backgroundColor="#19508B";
+    a1.style.opacity="0.7"
+    a1.style.filter="alpha(opacity=50%)";
+}
+function mmout(a,b,f)//鼠标移入菜单栏背景颜色的改变和菜单详情的可见性
+{
+    if(f==1)
+    {
+        flag1=0;
+    }
+    if(f==2)
+    {
+        flag2=0;
+    }
+    var a=document.getElementById(a);
+    a.style.backgroundColor="#459DF5";
+    var muid="mu"+b;
+    var a1=document.getElementById(muid);
+    a1.style.backgroundColor="#1C5297";
+    a1.style.opacity="0.7";
+    a1.style.filter="alpha(opacity=50%)";
+    if(flag1==0&&flag2==0)
+    {
+        var t=document.getElementById("menutable");
+        t.style.visibility="hidden";
+    }
+}
+function spanover(a)//鼠标在文字上方时，给文字添加下划线
+{
+    a="span"+a;
+    var sp=document.getElementById(a);
+    sp.style.textDecoration="underline";
+    sp.style.color="#FFFFFF"
+}
+function spanout(a)//鼠标不在文字上方时，取消文字下划线
+{
+    a="span"+a;
+    var sp=document.getElementById(a);
+    sp.style.textDecoration="none";
+    sp.style.color="#A2C9F0";
+}
+function addunderline(num)//鼠标移入加下划线
+{
+    var spanid="a"+num;//获得id
+    var dn="da"+num;
+    var a=document.getElementById(spanid);//根据id找到元素
+    var dnd=document.getElementById(dn);
+    dnd.style.backgroundColor="#6FB6FD";
+    dnd.style.color="#ffffff"
+    a.style.textDecoration="underline";
+} 
+function delunderline(num)//鼠标移出取消下划线
+{
+    var spanid="a"+num;//获得id
+    var dn="da"+num;
+    var a=document.getElementById(spanid);//根据id找到元素
+    var dnd=document.getElementById(dn);
+    dnd.style.backgroundColor="#ffffff";
+    dnd.style.color="#000000"
+    a.style.textDecoration="none";
 }
